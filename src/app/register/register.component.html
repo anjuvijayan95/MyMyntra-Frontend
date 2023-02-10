@@ -1,0 +1,51 @@
+<div class="body">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div id="wrapCol" class="col-md-9 ">
+            <div id="contentRow" class="row">
+                <div  class="col-md-6 " style="background-color: white;">
+                    <form class="form p-3 ms-4 me-1" [formGroup]="registReactForm" (ngSubmit)="registerTs()">
+                        <h3>Welcome To India's Largest Online Fasion Store</h3>
+                           <div class="mb-3 mt-2">
+                        <label for="exampleFormControlInput1" class="form-label">User Name</label>
+                        <input name="name" formControlName="uname" type="text" class="form-control w-75" id="exampleFormControlInput1" placeholder="Enter your name">
+                        <div *ngIf="this.registReactForm.get('uname')?.errors&&this.registReactForm.get('uname')?.touched" class="text-danger">
+                          Invalid Username
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                        <input name="password" formControlName="pswd" type="password" class="form-control w-75" id="exampleFormControlInput1" placeholder="Enter your password">
+                        <div *ngIf="this.registReactForm.get('pswd')?.errors&&this.registReactForm.get('pswd')?.touched" class="text-danger">
+                          Invalid Password
+                        </div>
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Mobile</label>
+                        <input name="phone" formControlName="mobile" type="text" class="form-control w-75" id="exampleFormControlInput1" placeholder="Enter your number">
+                        <div *ngIf="this.registReactForm.get('mobile')?.errors&&this.registReactForm.get('mobile')?.touched" class="text-danger">
+                          Invalid Mobile Number
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                        <textarea  name="address" formControlName="address" class="form-control w-75" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div *ngIf="this.registReactForm.get('address')?.errors&&this.registReactForm.get('address')?.touched" class="text-danger">
+                          Invalid Address
+                        </div>
+                      </div>
+                      <button type="submit" class="button w-50">Register</button>
+                    </form>
+                 
+                </div>
+                <div id="image" class="col-md-6">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+
+

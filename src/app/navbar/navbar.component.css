@@ -1,0 +1,62 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+img{
+    width: 8vw;
+}
+input{
+    width: 30vw;
+    margin-right: 50px;
+    border-radius: 2px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    height: 6vh;
+}
+i{
+    font-size: 20px;
+    padding:0 20px;
+    text-align: center;
+    color: grey;
+}
+span{
+    font-size: 10px;
+    text-transform: lowercase;
+}
+.iconDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+@media (max-width:799px){
+    .navbar-brand img{
+        width: 18vw;
+     }
+}
+
+@media(max-width:477px){
+
+    .navbar{
+        height: 20vh;
+    }
+
+    .navbar-brand img{
+       width: 28vw;
+    }
+
+    .navbar-toggler{
+        margin-right: 10px;
+    }
+
+    .navbar form input{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .navbar .iconDiv {
+        margin-top:10px ;
+    }
+}

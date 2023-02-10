@@ -1,0 +1,204 @@
+<!-- <section id="header">
+    <a class="navbar-brand" routerLink="">
+        <img  src="https://images.indianexpress.com/2021/01/myntra.png" alt="" class="logo">
+      </a>
+      <div>
+      <ul id="navbar">
+        <li><a class="active" href="#">HOME</a></li>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">KIDS</a></li>
+        <li><a href="#">HOME LIVING</a></li>
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> </li>
+    </ul>
+</div>
+<div class="mobile">
+    <i id="bar" class="fas fa-outdent"></i>
+</div>
+
+</section> -->
+
+<!-- hero section -->
+<section id="hero">
+<h4>Trade-in-Offer</h4>
+<h2>Super value deals</h2>
+<h1>On All Products</h1>
+<p>Save more with coupons & up to 70% off!</p>
+<button id="shopNowBtn">Shop Now</button>
+</section>
+
+<!-- feature section -->
+<section id="features" class="section-p1">
+<div class="fe-box">
+    <img src="https://www.financialexpress.com/wp-content/uploads/2022/11/food-delivery-pixabay-.jpg" alt="">
+    <h6>Free Shipping</h6>
+</div>
+<div class="fe-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGdgS7O3Y8AKBXEptV81ZiejErnxHxlFuyg&usqp=CAU" alt="">
+    <h6>Online Order</h6>
+</div>
+<div class="fe-box">
+    <img id="notalignImage1" src="https://img.freepik.com/free-vector/family-couple-saving-money_74855-5240.jpg?w=2000" alt="">
+    <h6>Save Money</h6>
+</div>
+<div class="fe-box">
+    <img src="https://businessjournaldaily.com/wp-content/uploads/2018/10/Promotional-campaign925.jpg" alt="">
+    <h6>Promotions</h6>
+</div>
+<div class="fe-box">
+    <img id="notalignImage2" src="https://static.vecteezy.com/system/resources/previews/002/147/279/original/young-man-and-woman-with-headphones-microphone-and-computer-customer-service-support-or-call-center-concept-free-vector.jpg" alt="">
+    <h6>F24/7 service</h6>
+</div>
+<div class="fe-box">
+    <img id="notalignImage3" src="https://cdni.iconscout.com/illustration/premium/thumb/happy-family-enjoys-shopping-3272753-2738326.png" alt="">
+    <h6>Happy Sale</h6>
+</div>
+</section>
+
+<!-- product section -->
+<section id="brand" class="section-p1">
+<h2 id="pro-title">Top Brand's Products</h2>
+<p id="title-para">Summer Collection New Morden Design</p>
+<div class="pro-container">
+    <div class="pro"  *ngFor="let B of brands">
+        <a><img [src]="B.image"></a>
+        <div class="details">
+        <h4>{{B.brand}}</h4>
+        <p>{{B.title}}</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- banner section -->
+<section id="banner" class="section-m1">
+<a><div class="linkimage"></div></a>
+<!-- <div class="layerdiv"></div> -->
+</section>
+
+<!-- new arrival section -->
+
+
+<section id="arrival" class="section-p1 ">
+<h2 id="pro-title">Its All For You</h2>
+<p id="title-para">Summer Collections & New Morden Designs</p>
+
+<div class="pro-container">
+    <div class="pro" *ngFor="let pro of allProducts"> 
+        
+        <!-- <div class="icons">
+            <a href="" class="fas fa-heart" style="color: rgb(214, 16, 82);"></a>
+            <a href="" class="fas fa-cart-shopping" style="color: rgb(16, 214, 75);"></a>
+        </div> -->
+
+        <div>        
+            <a routerLink="/products/{{pro.id}}"><img [src]="pro.image"></a>
+        </div>
+
+        <div class="details">
+        <h4>{{pro.brand}}</h4>
+        <p>{{pro.title.slice(0,20)}}...</p>
+        <h5 id="price">Rs.{{pro.price}}<span id="tag">Price:</span><span id="value">Rs.{{pro.pricetag}}</span></h5>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+
+
+<!-- small banner section -->
+<!-- <section id="two-Banner" class="section-p1">
+<div id="banner1" class="banner-box">
+    <h5>crozy deal</h5>
+    <h3>buy 1 get 1 free</h3>
+    <p>The best classic dress is on sale now</p>
+    <button id="banner-btn" type="button">Learn More</button>
+</div>
+<div id="banner2" class="banner-box">
+    <h5>spring/summer</h5>
+    <h3>upcomming season</h3>
+    <p>The best classic dress is on sale now</p>
+    <button id="banner-btn" type="button">Collection</button>
+</div>
+</section> -->
+
+<!-- three-banner section -->
+<!-- <section id="three-banner" class="section-p1">
+<div id="text-banner1" class="banner-box3">
+    <h3>SEASONAL SALE</h3>
+</div>
+<div id="text-banner2" class="banner-box3">
+    <h3>NEW FOOTWARE COLLECTION</h3>
+</div>
+<div id="text-banner3" class="banner-box3">
+    <h3>JEWELLERY</h3>
+</div>
+</section> -->
+
+<!-- Newsletter section -->
+<section id="newsletter"  class="section-m1">
+<div class="newstext">
+    <h3>Sign Up for Newsletters</h3>
+    <p>Get updates about our latest shop and <span>Special Offers.</span></p>
+</div>
+<div class="form">
+    <input type="text" placeholder="Your email address">
+    <button type="button">SignUp</button>
+</div>
+</section>
+
+<!-- footer section -->
+<footer class="section-p1">
+<div class="footer">
+<div class="logo" class="col">
+    <img style="width: 70px;" src="https://i.fbcd.co/products/resized/resized-750-500/6f2345032c698b53fe63513729ebe849c89c5d8682ce78cc2e645ee5914238d6.jpg" alt="">
+    <h4>Contact Us</h4>
+    <p><strong>Address: </strong> WMVX+9F6, <br>Bellandur Railway Station Rd,<br> Kadubeesanahalli, Bengaluru,<br> Karnataka 560103</p> 
+    <p><strong>Hours: </strong>Any time 24/7</p>
+    <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <h4>About</h4>
+    <a href="">About Us</a>
+    <a href="">Delivery Informations</a>
+    <a href="">Privacy Policy</a>
+    <a href="">Terms & Conditions</a>
+    <a href="">Contact Us</a>
+</div>
+<div class="col">
+    <h4>My Account</h4>
+    <a href="">Sign In</a>
+    <a href="">View Cart</a>
+    <a href="">My Wishlist</a>
+    <a href="">Track My Orders</a>
+    <a href="">Help</a>
+</div>
+<div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store and Google play</p>
+    <div class="row">
+        <img style="width: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt=""> 
+
+        <img style="width: 100px;" src="https://assets.thehansindia.com/h-upload/2021/10/07/1115962-google-play-store.webp" alt="">
+    </div>
+    <p>Secure Payment methods</p>
+    <img style="width: 200px;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38t7HVKa6UiNZbyFbQjwggRoahQj13WdpuyvcK7sftF8OtYr2yk0JxJIck87rJJs0xw&usqp=CAU" alt="">
+</div>
+</div>
+<div class="copyright">
+    <p>&copy;2023, Gulu's Ecommerce Website Template</p>
+</div>
+
+</footer>

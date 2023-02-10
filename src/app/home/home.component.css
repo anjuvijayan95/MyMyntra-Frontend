@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Acme&family=Fredoka+One&family=Kenia&family=La+Belle+Aurore&family=Lobster&family=Monoton&family=Pacifico&family=Playfair+Display:ital@1&family=Rowdies&family=Rubik+Vinyl&family=Ubuntu&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -51,7 +50,7 @@ body{
     flex-wrap: wrap;
     padding: 15px 30px;
 } */
-#header{
+/* #header{
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -117,7 +116,7 @@ background-color: white;
 #navbar li a i:hover{
     color: #e4197e;
     font-size: 25px;
-}
+} */
 /* 
  #navbarList{
     display: flex;
@@ -273,13 +272,13 @@ background-color: white;
 
 
 
-/* ********************product section css****************** */
-#products #pro-title, #title-para{
+/* ********************brand section css****************** */
+#brand #pro-title, #title-para{
     font-family: 'Fredoka One', cursive;
     text-align: center;
 }
 
-#products .pro-container{
+#brand .pro-container{
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -288,41 +287,42 @@ background-color: white;
     
 }
 
-#products .pro-container .pro{
-    width: 250px;
+#brand .pro-container .pro{
+    width: 140px;
     border: 1px solid rgb(221, 230, 228);
     /* position: relative; */
     background-image: url('https://thumbs.dreamstime.com/b/abstract-light-art-painting-background-modern-contemporary-artistic-textures-soft-pastel-colors-176980425.jpg');
     margin-top: 30px;
 }
 
-#products .pro-container .pro:hover{
-    width: 255px;
+#brand .pro-container .pro:hover{
+    width: 165px;
     background-image: url('https://www.polytec.com.au/img/products/960-960/magnetic-bright-white.jpg');
+
 }
 
-#products .pro-container .pro img{
+#brand .pro-container .pro img{
     box-shadow: 20px 20px 14px rgba(91, 97, 94, 0.09);
     width: 100%;
-    height: 45vh;
+    height:28vh;
 }
 
 
-#products .pro-container .pro .details{
+#brand .pro-container .pro .details{
     padding: 10px;
     margin-bottom: -25px;
 }
 
-#products .pro-container .pro .details p{
+#brand .pro-container .pro .details p{
     font-size: 14px;
     margin-top: -.3px;
 }
 
-#products .pro-container .pro .details h5{
+#brand .pro-container .pro .details h5{
     margin-top: -16px;
 }
 
-#products .pro-container .pro .bag{
+#brand .pro-container .pro .bag{
 
     background-color: aliceblue;
     border-radius: 50px;
@@ -345,12 +345,12 @@ background-color: white;
 } */
 #banner .linkimage{
     align-items: center;
-    background-image: url('https://img.freepik.com/premium-psd/summer-fashion-sale-social-media-web-banner-flyer-facebook-cover-design-template_220443-387.jpg?w=2000');
+    background-image: url('https://www.orchardtaunton.co.uk/app/uploads/2021/06/OSC-Summer-Generic-Website-Banner-01.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     box-shadow: 20px 20px 20px rgba(51, 54, 53, 0.1);
 }
 
@@ -358,6 +358,7 @@ background-color: white;
 #arrival #pro-title, #title-para{
     font-family: 'Fredoka One', cursive;
     text-align: center;
+    z-index: 10000;
 }
 
 #arrival .pro-container{
@@ -366,27 +367,54 @@ background-color: white;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-between;
-    
+
 }
 
 #arrival .pro-container .pro{
-    width: 250px;
+    width: 200px;
+    height: 375px;
     border: 1px solid rgb(221, 230, 228);
-    /* position: relative; */
-    background-image: url('https://previews.123rf.com/images/flas100/flas1001306/flas100130600099/20379223-abstract-light-color-watercolor-background.jpg');
-    margin-top: 30px;
+    background-image: url('https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131__340.jpg');
+    transition-delay: .2s
+
+
 }
 
 #arrival .pro-container .pro:hover{
-    width: 255px;
-    background-image: url('https://www.polytec.com.au/img/products/960-960/magnetic-bright-white.jpg');
+    transform:scale(.9);
+    background-image: url('data:image/jpeg;base64,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');
+    height: 390px;
+
 }
+
+#arrival .pro-container .pro .icons{
+    text-align: center;
+    background-color: #fff;
+    display: none;
+}
+
+
+#arrival .pro-container .pro .icons a{
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+
+#arrival .pro-container .pro:hover .icons{
+    display: contents;
+}
+
 
 #arrival .pro-container .pro img{
     box-shadow: 20px 20px 14px rgba(91, 97, 94, 0.09);
     width: 100%;
-    height: 45vh;
+    height: 38vh;
+    z-index: 1000;
 }
+/* #arrival .pro-container .pro img:hover{
+    transform: translateY(2.3rem);
+} */
 
 
 #arrival .pro-container .pro .details{
@@ -397,13 +425,31 @@ background-color: white;
 #arrival .pro-container .pro .details p{
     font-size: 14px;
     margin-top: -.3px;
+    font-weight: bold;
+    color: #113634;
 }
 
 #arrival .pro-container .pro .details h5{
-    margin-top: -16px;
+    margin-top: -25px;
 }
 
-#arrival .pro-container .pro .bag{
+
+#arrival .pro-container .pro h5 #tag{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+#price,#pricetag{
+    display: inline;
+}
+
+#arrival .pro-container .pro h5 #value{
+    color: rgb(134, 35, 35);
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+/* #arrival .pro-container .pro .bag{
 
     background-color: aliceblue;
     border-radius: 50px;
@@ -414,11 +460,10 @@ background-color: white;
     color: rgb(61, 201, 177);
     font-size: 20px;
     text-align: center;
-    position: relative;
     bottom: 1px;
     right: 10px;
     float: right;
-}
+} */
 
 /* ******************two-banner*************** */
 #two-Banner{
@@ -516,7 +561,7 @@ background-color: white;
 }
 
 #three-banner #text-banner3{
-    background-image: url('https://fashionsuggest.in/wp-content/uploads/2018/05/v-neck-t-shirts-banner-compressed-1.jpg');
+    background-image: url('https://i.pinimg.com/736x/b1/70/bc/b170bcf4f3f709370d0cb8b37127861c.jpg');
 }
 
 /* Newsletter section css */
@@ -747,7 +792,6 @@ footer a:hover{
     #arrival .pro-container .pro{
         width: 250px;
         border: 1px solid rgb(221, 230, 228);
-        background-image: url('https://thumbs.dreamstime.com/b/abstract-light-art-painting-background-modern-contemporary-artistic-textures-soft-pastel-colors-176980425.jpg');
         margin-top: 30px;
         margin: 15px;
     }
@@ -757,6 +801,7 @@ footer a:hover{
         width: 100%;
         height: 25vh;
     }
+    
 
     /* banner-two responsive */
 
@@ -860,6 +905,7 @@ footer a:hover{
 
         #arrival .pro-container .pro{
             width: 100%;
+            height: 53vh;
         }
         
         #arrival .pro-container .pro img {

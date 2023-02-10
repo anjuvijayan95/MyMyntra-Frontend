@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg shadow-sm p-3  bg-body rounded" style="height: 12vh;">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">
+        <img src="https://i.fbcd.co/products/resized/resized-750-500/6f2345032c698b53fe63513729ebe849c89c5d8682ce78cc2e645ee5914238d6.jpg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-white p-3" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-weight: bold; color: black;">
+          <li class="nav-item ms-4">
+            <a class="nav-link " aria-current="page" routerLink="/home">HOME</a>
+          </li>
+          <!-- <li class="nav-item ms-4">
+            <a class="nav-link " aria-current="page" routerLink="/shop">SHOP</a>
+          </li> -->
+          <li class="nav-item ms-4">
+            <a class="nav-link" routerLink="/blog">BLOG</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <div></div>
+          <input class="form-control" type="search"  placeholder="Search for products, brands and more" aria-label="Search">
+        </form>
+        <div class="iconDiv">
+        <a routerLink="/wishlist"><i class="fa fa-heart text-danger"></i></a>
+        <a routerLink="/cart"><i class="fa-solid fa-cart-shopping text-warning"></i></a>
+        <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+      </div>
+      </div>
+    </div>
+  </nav>

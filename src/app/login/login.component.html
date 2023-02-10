@@ -1,0 +1,40 @@
+<div class="body body-expand-lg" style="background-color: rgb(181, 200, 241); ">
+    <div class="row">
+        <div class="content1 col-md-4"></div>
+        <div class="content col-md-4 d-flex justify-content-center">
+            <div class="wrapper mb-3" style="background-color: white; width: 90%; ">
+                <div class="imgWrap">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/008/174/590/small/fashion-advertising-web-banner-illustration-vector.jpg">
+                </div>
+                <div class="formdiv">
+                    <form [formGroup]="loginReactForm" (ngSubmit)="login()">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label mb-3">
+                            <span class="span1">Login</span> or <span class="span1">Signup</span>
+                        </label>
+                          <input name="mobile" formControlName="mobile" type="email" class="form-control" placeholder="Mobile Number" >
+                          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        <div *ngIf="this.loginReactForm.get('mobile')?.errors&&this.loginReactForm.get('mobile')?.touched" class="text-danger">
+                            Invalid Mobile Number
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label mb-3" style="font-weight: bold; font-size: 20px;">Password</label>
+                          <input name="password" formControlName="pswd" type="password" class="form-control" placeholder="Password">
+                          <div *ngIf="this.loginReactForm.get('pswd')?.errors&&this.loginReactForm.get('pswd')?.touched" class="text-danger mb-2">Invalid Password</div>
+
+                        </div>
+                        <p id="para">By continuing, I agree to the <span class="span2"> Terms of Use </span> & <span class="span2"> Privacy Policy</span></p>
+                        <div class="text-success">{{successMsg}}</div>
+                        <div class="text-danger">{{errorMsg}}</div>
+                        <button type="submit"class="button mt-3">CONTINUE</button>
+
+                       <p style="font-size: 14px; margin-bottom: 10px; padding-top: 1em;"> <a routerLink="/register">SignUp</a>  here</p>
+
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="content1 col-md-4"></div>
+    </div>
+</div>

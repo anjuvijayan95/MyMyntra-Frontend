@@ -1,0 +1,32 @@
+<section *ngIf="!wishlistStatus"id="emptyList" >
+    <div class="emptyList">
+        <h4>Your Wishlist is Empty</h4>
+        <button routerLink="/home">Continue shopping</button>
+    </div>
+</section>
+
+
+<!-- list item section -->
+<section *ngIf="wishlistStatus" id="listitem" class="section-p1">
+    <div class="wrapper">
+
+        <div class="card" *ngFor="let wish of wishlist">
+            <div class="icons">
+                <i  (click)="addToCart(wish)" style="color: purple;" class="fas fa-cart-shopping"></i>
+                <!-- <i routerLink=""  style="color: green;" class="fas fa-eye"></i> -->
+                <button  (click)="deleteWishlist(wish.id)" style="color: red; border: none;" class="fas fa-trash"></button>
+            </div>
+           
+            <div class="image">
+                <img [src]="wish.image">
+            </div>
+            <div class="details">
+               <h4 class="brand">{{wish.brand}}</h4>
+               <p>{{wish.title.slice(0,18)}}...</p>
+               <h4>Rs.{{wish.price}}<span style="font-size: 15px; margin-left: 5px; text-decoration: line-through; color: red;">price:{{wish.pricetag}}</span></h4>
+            </div>
+        </div>
+
+    </div>
+</section>
+

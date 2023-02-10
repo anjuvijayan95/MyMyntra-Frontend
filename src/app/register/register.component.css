@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: rgb(255, 217, 0);
+    width: 100%;
+    height: 100%;
+}
+h3{
+    font-size: 30px;
+}
+#image{
+background-image: url('https://gumlet.assettype.com/nationalherald%2F2022-05%2F8e06047d-086c-48b8-af85-1eb0f8954833%2FKiara_Advani.png?rect=0%2C0%2C602%2C759&format=auto');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+#wrapCol{
+    margin-top:47px;
+    margin-bottom:2em ;
+}
+label{
+    font-weight: bold;
+}
+button{
+    background-color: rgb(255, 71, 102);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0 auto;
+    height: 2em;
+    border-style: none;
+}
+input{
+    border-radius: 0px;
+    /* height: 2em; */
+    padding: 5px;
+}
+
+
+@media(max-width:999px){
+    #image{
+        background-image: url('https://static.toiimg.com//photo/89237674/89237674.jpg?imgsize=64984');
+    }
+
+    .body{
+        background-color: grey;
+        height: 88vh;
+    }
+
+    #contentRow{
+        margin-top: 18%;
+    }
+
+
+    @media(max-width:477px){
+
+        .body{
+            background-color: rgb(141, 9, 112);
+            height: 88vh;
+        }
+
+        #image{
+            display: none;
+        }
+
+        #contentRow{
+            margin-top: 10%;
+            padding: 1rem;
+        }
+    }
+}

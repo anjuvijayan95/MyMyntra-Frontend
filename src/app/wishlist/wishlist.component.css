@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Acme&family=Fredoka+One&family=Kenia&family=La+Belle+Aurore&family=Lobster&family=Monoton&family=Pacifico&family=Playfair+Display:ital@1&family=Rowdies&family=Rubik+Vinyl&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Spara; */
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222
+}
+h2{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222
+}
+h4{
+    font-size: 20px;
+    color:#222
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    /* line-height: 64px; */
+    color:#465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    margin: 40px 80px;
+}
+.section-m1{
+    margin: 50px 0;
+
+}
+body{
+    width: 100%;
+}
+
+/* empty list */
+
+
+#emptyList .emptyList{
+    text-align: center;
+    line-height: 2rem;
+    border: 1px solid pink;
+    width: 30rem;
+    padding: 5rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+#emptyList .emptyList h4::after{
+    content: '\1F615';
+}
+
+#emptyList .emptyList button{
+    padding: .5rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: pink;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    color: #465b52;
+}
+
+
+/* wishcard */
+/* #listitem{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.card{
+    width: 13rem;
+    padding: 0px 1px;
+    position: relative;
+    text-align: center;
+    transition-delay:1s;
+    overflow: hidden;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper .card .icons{
+    position: absolute;
+    display: inline-block;
+    transform: translateY(-100%);
+    top: 0; left: 0;right: 0;
+    z-index: 1;
+    background-color: white;
+    
+}
+
+.wrapper .card:hover  .icons{
+    transform: translateY(0);
+}
+
+.icons button{
+    background-color: white;
+}
+
+.wrapper .card .icons i,.icons button{
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.wrapper .card .icons i:hover,.icons button:hover{
+    background-color: #c6dfe2;
+    color: bisque;
+}
+
+.wrapper .card .image{
+    width: 100%;
+    height: 35vh;
+}
+
+.wrapper .card .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .card:hover .image img{
+    transform: translateY(3rem);
+}
+
+.wrapper .card .details{
+    padding: 5px;
+    text-align: justify;
+}
+
+.wrapper .card .details p{
+    line-height: 1px;
+}
+

@@ -1,0 +1,222 @@
+<!-- <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/l4ei1e80/dress/i/8/a/m-16770952-dressberry-original-imagfbad5h7yfafk.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Dress Berry</h4>
+            <p>Casual Cutout Tops</p>
+            <h5>Rs.599</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/ktx9si80/ethnic-set/a/1/u/s-14121984-anouk-original-imag75t4hcukwngr.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Anouk</h4>
+            <p>Casual Puff Sleeves Solid Women Tops</p>
+            <h5>Rs.419</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/dress/r/x/a/xs-17647078-bebe-original-imaghpzthfkgrud7.jpeg?q=70"></a>
+            <div class="details">
+            <h4>bebe</h4>
+            <p>Casual Raglan Sleeves Solid Women Tops</p>
+            <h5>Rs.329</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        
+    
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/jws547k0/t-shirt/g/a/8/m-6825457-hrx-by-hrithik-roshan-original-imafhdw46gbhsa3m.jpeg?q=70"></a>
+            <div class="details">
+            <h4>HRX</h4>
+            <p>Men Printed T-Shirts</p>
+            <h5>Rs.327</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/km2clu80/shirt/e/t/o/l-hlsh012471-highlander-original-imagffwrgbnccpj2.jpeg?q=70"></a>
+            <div class="details">
+            <h4>HIGHLANDER </h4>
+            <p>Men Slim Fit Printed Casual Shirts</p>
+            <h5>Rs.351</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/xif0q/jean/g/d/z/28-lj3005-lzard-original-imaggrmgkxqeabnr.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Lzard </h4>
+            <p>Men Regular Mid Rise Jeans</p>
+            <h5>Rs.569</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/u/u/w/3xl-fs49-purpl-dragon-leotude-original-imaghf7hazz4tmuu.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Leotude </h4>
+            <p>Men Printed T-Shirts</p>
+            <h5>Rs.329</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/e/p/o/xxl-1866509-roadster-original-imagkfxgw3d3s6fc.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Roadster</h4>
+            <p>Casual Cutout Solid Women Tops</p>
+            <h5>Rs.599</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/l4ei1e80/dress/i/8/a/m-16770952-dressberry-original-imagfbad5h7yfafk.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Dress Berry</h4>
+            <p>Casual Cutout Tops</p>
+            <h5>Rs.599</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/ktx9si80/ethnic-set/a/1/u/s-14121984-anouk-original-imag75t4hcukwngr.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Anouk</h4>
+            <p>Casual Puff Sleeves Solid Women Tops</p>
+            <h5>Rs.419</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/dress/r/x/a/xs-17647078-bebe-original-imaghpzthfkgrud7.jpeg?q=70"></a>
+            <div class="details">
+            <h4>bebe</h4>
+            <p>Casual Raglan Sleeves Solid Women Tops</p>
+            <h5>Rs.329</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        
+    
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/jws547k0/t-shirt/g/a/8/m-6825457-hrx-by-hrithik-roshan-original-imafhdw46gbhsa3m.jpeg?q=70"></a>
+            <div class="details">
+            <h4>HRX</h4>
+            <p>Men Printed T-Shirts</p>
+            <h5>Rs.327</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/km2clu80/shirt/e/t/o/l-hlsh012471-highlander-original-imagffwrgbnccpj2.jpeg?q=70"></a>
+            <div class="details">
+            <h4>HIGHLANDER </h4>
+            <p>Men Slim Fit Printed Casual Shirts</p>
+            <h5>Rs.351</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/xif0q/jean/g/d/z/28-lj3005-lzard-original-imaggrmgkxqeabnr.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Lzard </h4>
+            <p>Men Regular Mid Rise Jeans</p>
+            <h5>Rs.569</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+        <div class="pro">
+            <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/u/u/w/3xl-fs49-purpl-dragon-leotude-original-imaghf7hazz4tmuu.jpeg?q=70"></a>
+            <div class="details">
+            <h4>Leotude </h4>
+            <p>Men Printed T-Shirts</p>
+            <h5>Rs.329</h5>
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="pro">
+        <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/l4ei1e80/dress/i/8/a/m-16770952-dressberry-original-imagfbad5h7yfafk.jpeg?q=70"></a>
+        <div class="details">
+        <h4>Dress Berry</h4>
+        <p>Casual Cutout Tops</p>
+        <h5>Rs.599</h5>
+        </div>
+        <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+    </div>
+    <div class="pro">
+        <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/ktx9si80/ethnic-set/a/1/u/s-14121984-anouk-original-imag75t4hcukwngr.jpeg?q=70"></a>
+        <div class="details">
+        <h4>Anouk</h4>
+        <p>Casual Puff Sleeves Solid Women Tops</p>
+        <h5>Rs.419</h5>
+        </div>
+        <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+    </div>
+    <div class="pro">
+        <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/dress/r/x/a/xs-17647078-bebe-original-imaghpzthfkgrud7.jpeg?q=70"></a>
+        <div class="details">
+        <h4>bebe</h4>
+        <p>Casual Raglan Sleeves Solid Women Tops</p>
+        <h5>Rs.329</h5>
+        </div>
+        <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+    </div>
+    
+
+    <div class="pro">
+        <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/jws547k0/t-shirt/g/a/8/m-6825457-hrx-by-hrithik-roshan-original-imafhdw46gbhsa3m.jpeg?q=70"></a>
+        <div class="details">
+        <h4>HRX</h4>
+        <p>Men Printed T-Shirts</p>
+        <h5>Rs.327</h5>
+        </div>
+        <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+    </div>
+    <div class="pro">
+        <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/km2clu80/shirt/e/t/o/l-hlsh012471-highlander-original-imagffwrgbnccpj2.jpeg?q=70"></a>
+        <div class="details">
+        <h4>HIGHLANDER </h4>
+        <p>Men Slim Fit Printed Casual Shirts</p>
+        <h5>Rs.351</h5>
+        </div>
+        <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+    </div>
+    <div class="pro">
+        <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/xif0q/jean/g/d/z/28-lj3005-lzard-original-imaggrmgkxqeabnr.jpeg?q=70"></a>
+        <div class="details">
+        <h4>Lzard </h4>
+        <p>Men Regular Mid Rise Jeans</p>
+        <h5>Rs.569</h5>
+        </div>
+        <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+    </div>
+    <div class="pro">
+        <a href=""><img src="https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/u/u/w/3xl-fs49-purpl-dragon-leotude-original-imaghf7hazz4tmuu.jpeg?q=70"></a>
+        <div class="details">
+        <h4>Leotude </h4>
+        <p>Men Printed T-Shirts</p>
+        <h5>Rs.329</h5>
+        </div>
+        <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+    </div> -->

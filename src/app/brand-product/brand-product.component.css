@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Acme&family=Fredoka+One&family=Kenia&family=La+Belle+Aurore&family=Lobster&family=Monoton&family=Pacifico&family=Playfair+Display:ital@1&family=Rowdies&family=Rubik+Vinyl&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Spara; */
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222
+}
+h2{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222
+}
+h4{
+    font-size: 20px;
+    color:#222
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    /* line-height: 64px; */
+    color:#465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    margin: 40px 80px;
+}
+.section-m1{
+    margin: 50px 0;
+
+}
+body{
+    width: 100%;
+}
+
+
+
+/* ********************product section css****************** */
+#product #pro-title, #title-para{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+#product .pro-container{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+#product .pro-container .pro{
+    width: 250px;
+    border: 1px solid rgb(221, 230, 228);
+    /* position: relative; */
+    background-image: url('https://previews.123rf.com/images/flas100/flas1001306/flas100130600099/20379223-abstract-light-color-watercolor-background.jpg');
+    margin-top: 30px;
+}
+
+#product .pro-container .pro:hover{
+    width: 255px;
+    background-image: url('https://www.polytec.com.au/img/products/960-960/magnetic-bright-white.jpg');
+}
+
+#product .pro-container .pro img{
+    box-shadow: 20px 20px 14px rgba(91, 97, 94, 0.09);
+    width: 100%;
+    height: 45vh;
+}
+
+
+#product .pro-container .pro .details{
+    padding: 10px;
+    margin-bottom: -40px;
+}
+
+#product .pro-container .pro .details p{
+    font-size: 14px;
+    margin-top: -.3px;
+}
+
+#product .pro-container .pro .details h5{
+    margin-top: -16px;
+}
+
+#product .pro-container .pro h5 #tag{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+#price,#pricetag{
+    display: inline;
+}
+
+#product .pro-container .pro h5 #value{
+    color: red;
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+
+#product .pro-container .pro .bag{
+
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 1px solid rgb(193, 245, 236);
+    line-height: 35px;
+    width: 40px;
+    height: 40px;
+    color: rgb(61, 201, 177);
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+    right: 10px;
+    float: right;
+}

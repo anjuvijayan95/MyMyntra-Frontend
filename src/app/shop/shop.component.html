@@ -1,0 +1,91 @@
+
+    <!-- hero section -->
+    <section id="page-header">
+        <h2 id="heading">#stayhome</h2>
+        <p id="para">Save more with coupons & up to 70% off!</p>
+    </section>
+        
+    
+    <!-- product section -->
+    
+    <section id="product" class="section-p1 ">
+    <div class="pro-container">
+        
+        <div class="pro" *ngFor="let pro of allProducts">
+            <a routerLink="/products/{{pro.id}}"><img [src]="pro.image"></a>
+            <div class="details">
+            <h4>{{pro.brand}}</h4>
+            <p>{{pro.title}}</p>
+            <h5 id="price">Rs.{{pro.price}}<span id="tag">Price:</span><span id="value">Rs.{{pro.pricetag}}</span></h5>
+            
+            </div>
+            <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section id="newsletter"  class="section-m1">
+    <div class="newstext">
+        <h3>Sign Up for Newsletters</h3>
+        <p>Get updates about our latest shop and <span>Special Offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button type="button">SignUp</button>
+    </div>
+    </section>
+    
+    <!-- footer section -->
+    <footer class="section-p1">
+    <div class="footer">
+    <div class="logo" class="col">
+        <img style="width: 70px;" src="https://i.fbcd.co/products/resized/resized-750-500/6f2345032c698b53fe63513729ebe849c89c5d8682ce78cc2e645ee5914238d6.jpg" alt="">
+        <h4>Contact Us</h4>
+        <p><strong>Address: </strong> WMVX+9F6, <br>Bellandur Railway Station Rd,<br> Kadubeesanahalli, Bengaluru,<br> Karnataka 560103</p> 
+        <p><strong>Hours: </strong>Any time 24/7</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="">About Us</a>
+        <a href="">Delivery Informations</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms & Conditions</a>
+        <a href="">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="">Sign In</a>
+        <a href="">View Cart</a>
+        <a href="">My Wishlist</a>
+        <a href="">Track My Orders</a>
+        <a href="">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store and Google play</p>
+        <div class="row">
+            <img style="width: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt=""> 
+    
+            <img style="width: 100px;" src="https://assets.thehansindia.com/h-upload/2021/10/07/1115962-google-play-store.webp" alt="">
+        </div>
+        <p>Secure Payment methods</p>
+        <img style="width: 200px;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38t7HVKa6UiNZbyFbQjwggRoahQj13WdpuyvcK7sftF8OtYr2yk0JxJIck87rJJs0xw&usqp=CAU" alt="">
+    </div>
+    </div>
+    <div class="copyright">
+        <p>&copy;2023, Gulu's Ecommerce Website Template</p>
+    </div>
+    
+    </footer>

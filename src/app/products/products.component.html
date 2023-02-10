@@ -1,0 +1,138 @@
+    <!-- product detail section -->
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img id="singleImage" [src]="product.image">
+        </div>
+        <div class="single-pro-details">
+            <h3>{{product.brand}}</h3>
+            <h6>{{product.title}}</h6>
+            <h4 id="price">Rs.{{product.price}}</h4>
+            <select>
+                <option value="">Select Size</option>
+                <option value="">XS</option>
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+            </select>
+
+            <input type="number" value="1">
+            <button  (click)="addToCart(product)" id="cart" class="normal">Add to cart</button>
+            <button (click)="addToWishlist(product)" id="wish" class="normal">Wishlist</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, magni quam minima aut placeat fuga sit quisquam! Cupiditate fugiat aut quas, ipsum illum, fuga nam unde commodi esse maiores in.
+            Nulla a voluptatem officiis ipsam id saepe porro iste vero voluptate eligendi necessitatibus culpa facilis maxime numquam, debitis 
+            </span>
+        </div>
+    </section>
+
+    <!-- featured product -->
+    <section id="product" class="section-p1 ">
+       
+            <h1 id="pro-title">Featured Products</h1>
+            <p id="title-para">summer collections and new mordern designs</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <a><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/e/p/o/xxl-1866509-roadster-original-imagkfxgw3d3s6fc.jpeg?q=70"></a>
+                    <div class="details">
+                    <h4>Roadster</h4>
+                    <p>Casual Cutout Solid Women Tops</p>
+                    <h5>Rs.599</h5>
+                    </div>
+                    <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+                </div>
+                <div class="pro">
+                    <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/l4ei1e80/dress/i/8/a/m-16770952-dressberry-original-imagfbad5h7yfafk.jpeg?q=70"></a>
+                    <div class="details">
+                    <h4>Dress Berry</h4>
+                    <p>Casual Cutout Tops</p>
+                    <h5>Rs.599</h5>
+                    </div>
+                    <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+                </div>
+                <div class="pro">
+                    <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/ktx9si80/ethnic-set/a/1/u/s-14121984-anouk-original-imag75t4hcukwngr.jpeg?q=70"></a>
+                    <div class="details">
+                    <h4>Anouk</h4>
+                    <p>Casual Puff Sleeves Solid Women Tops</p>
+                    <h5>Rs.419</h5>
+                    </div>
+                    <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+                </div>
+                <div class="pro">
+                    <a href=""><img src="https://rukminim1.flixcart.com/image/612/612/xif0q/dress/r/x/a/xs-17647078-bebe-original-imaghpzthfkgrud7.jpeg?q=70"></a>
+                    <div class="details">
+                    <h4>bebe</h4>
+                    <p>Casual Raglan Sleeves Solid Women Tops</p>
+                    <h5>Rs.329</h5>
+                    </div>
+                    <a href=""><i class="fa-solid fa-bag-shopping bag"></i></a>
+                </div>
+            </div>
+     
+    </section>
+
+    <!-- Newsletter section -->
+    <section id="newsletter"  class="section-m1">
+    <div class="newstext">
+        <h3>Sign Up for Newsletters</h3>
+        <p>Get updates about our latest shop and <span>Special Offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button type="button">SignUp</button>
+    </div>
+    </section>
+    
+    <!-- footer section -->
+    <footer class="section-p1">
+    <div class="footer">
+    <div class="logo" class="col">
+        <img style="width: 70px;" src="https://i.fbcd.co/products/resized/resized-750-500/6f2345032c698b53fe63513729ebe849c89c5d8682ce78cc2e645ee5914238d6.jpg" alt="">
+        <h4>Contact Us</h4>
+        <p><strong>Address: </strong> WMVX+9F6, <br>Bellandur Railway Station Rd,<br> Kadubeesanahalli, Bengaluru,<br> Karnataka 560103</p> 
+        <p><strong>Hours: </strong>Any time 24/7</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="">About Us</a>
+        <a href="">Delivery Informations</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms & Conditions</a>
+        <a href="">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="">Sign In</a>
+        <a href="">View Cart</a>
+        <a href="">My Wishlist</a>
+        <a href="">Track My Orders</a>
+        <a href="">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store and Google play</p>
+        <div class="row">
+            <img style="width: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt=""> 
+    
+            <img style="width: 100px;" src="https://assets.thehansindia.com/h-upload/2021/10/07/1115962-google-play-store.webp" alt="">
+        </div>
+        <p>Secure Payment methods</p>
+        <img style="width: 200px;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38t7HVKa6UiNZbyFbQjwggRoahQj13WdpuyvcK7sftF8OtYr2yk0JxJIck87rJJs0xw&usqp=CAU" alt="">
+    </div>
+    </div>
+    <div class="copyright">
+        <p>&copy;2023, Gulu's Ecommerce Website Template</p>
+    </div>
+    
+    </footer>

@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Acme&family=Fredoka+One&family=Kenia&family=La+Belle+Aurore&family=Lobster&family=Monoton&family=Pacifico&family=Playfair+Display:ital@1&family=Rowdies&family=Rubik+Vinyl&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Spara; */
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222
+}
+h2{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222
+}
+h4{
+    font-size: 20px;
+    color:#222
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    /* line-height: 64px; */
+    color:#465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    margin: 40px 80px;
+}
+.section-m1{
+    margin: 50px 0;
+
+}
+body{
+    width: 100%;
+}
+
+/* ****************hero section css*************** */
+#page-header{
+    background-image: url('https://www.orchardtaunton.co.uk/app/uploads/2021/06/OSC-Summer-Generic-Website-Banner-01.jpg');
+    height: 55vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* ********************product section css****************** */
+#product #pro-title, #title-para{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+#product .pro-container{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+#product .pro-container .pro{
+    width: 250px;
+    height: 500px;
+    border: 1px solid rgb(221, 230, 228);
+    /* position: relative; */
+    background-image: url('https://previews.123rf.com/images/flas100/flas1001306/flas100130600099/20379223-abstract-light-color-watercolor-background.jpg');
+    margin-top: 30px;
+}
+
+#product .pro-container .pro:hover{
+    width: 255px;
+    background-image: url('https://www.polytec.com.au/img/products/960-960/magnetic-bright-white.jpg');
+}
+
+#product .pro-container .pro img{
+    box-shadow: 20px 20px 14px rgba(91, 97, 94, 0.09);
+    width: 100%;
+    height: 45vh;
+}
+
+
+#product .pro-container .pro .details{
+    padding: 10px;
+    margin-bottom: -40px;
+}
+
+#product .pro-container .pro .details p{
+    font-size: 14px;
+    margin-top: -.3px;
+}
+
+#product .pro-container .pro .details h5{
+    margin-top: -16px;
+}
+
+#product .pro-container .pro h5 #tag{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+#price,#pricetag{
+    display: inline;
+}
+
+#product .pro-container .pro h5 #value{
+    color: red;
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+
+#product .pro-container .pro .bag{
+
+    background-color: aliceblue;
+    border-radius: 50px;
+    border: 1px solid rgb(193, 245, 236);
+    line-height: 35px;
+    width: 40px;
+    height: 40px;
+    color: rgb(61, 201, 177);
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+    right: 10px;
+    float: right;
+}
+
+/* Newsletter section css */
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/573130/pexels-photo-573130.jpeg?cs=srgb&dl=pexels-zulian-yuliansyah-573130.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 30%;
+    height: 100%;
+    padding: 30px 60px;
+}
+
+#newsletter h3{
+    font-family:'Fredoka One', cursive ;
+    color: wheat;
+    text-shadow: 1px 1px black;
+}
+
+#newsletter p{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+#newsletter p span{
+    color: rgb(43, 119, 43);
+    font-size: 20px;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height:3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-weight: bold;
+}
+
+#newsletter button{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #088178;
+    color: #ffff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    margin-bottom:8px ;
+}
+footer a{
+    font-size: 14px;
+    margin-bottom:10px ;
+    text-decoration: none;
+    color: #222;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border-radius: 8px;
+    padding-right: 4px;
+    height: 40px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+.copyright{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* media query for make site responsive */
+@media (max-width:799px){
+    /* hero section responsive */
+    #page-header{
+        height: 25vh;
+        width: 100%;
+        padding: 0 80px;
+        position: relative;
+        background-position:top 20%  left 10%;
+        font-family: 'Fredoka One', cursive;
+    }
+
+
+    #page-header #heading,#para{
+       display: none;
+    }
+
+    
+    /* product responsive */
+
+    .section-p1{
+        margin: 40px 40px;
+    }
+    
+    #product .pro-container{
+        justify-content: center;
+    }
+
+    #product .pro-container .pro{
+        width: 250px;
+        border: 1px solid rgb(221, 230, 228);
+        background-image: url('https://thumbs.dreamstime.com/b/abstract-light-art-painting-background-modern-contemporary-artistic-textures-soft-pastel-colors-176980425.jpg');
+        margin-top: 30px;
+        margin: 15px;
+    }
+
+    #product .pro-container .pro  img {
+        box-shadow: 20px 20px 14px rgba(91, 97, 94, 0.09);
+        width: 100%;
+        height: 25vh;
+    }
+
+    #product .pro-container .pro:hover{
+        width: 255px;
+        background-image: url('https://www.polytec.com.au/img/products/960-960/magnetic-bright-white.jpg');
+    }
+
+    /*news letter form responsive*/
+
+    #newsletter .form{
+        display: flex;
+        width: 70%;
+    }
+
+}
+
+
+@media(max-width:477px){
+
+    /* pageheader section responsive  */
+    #page-header{
+        background-position: 74%;
+        height: 30vh;
+    }
+
+    #page-header #heading{
+        font-size: 25px;
+    }
+
+    #page-header #heading,#para{
+        display: block;
+        color: #fff;
+        text-align: left;     
+        }
+
+    #hero h1{
+        font-size:32px;
+        line-height: 54px;
+    }
+
+    #hero h2{
+        font-size:25px;
+        line-height: 24px;
+    }
+
+    #hero h4 {
+        font-size: 20px;
+    }
+    
+    #hero p{
+        color:white;
+        font-size: 15px;
+    }
+    
+    #shopNowBtn{
+        padding: 20px 20px 20px 40px;
+    }
+
+    .section-p1{
+        padding: 6px;
+    }
+
+    .section-m1{
+        margin: 10px 0;
+    
+    }
+
+    /* product section responsive*/
+
+    #products .pro-container .pro {
+        width: 100%;
+    }
+    
+    #product .pro-container .pro img {
+        box-shadow: 10px 10px 4px rgba(91, 97, 94, 0.09);
+        width: 100%;
+        height: 38vh;
+    }
+
+    #product .pro-container .pro:hover{
+        width: 255px;
+        background-image: url('https://www.polytec.com.au/img/products/960-960/magnetic-bright-white.jpg');
+    }
+
+    /*news letter form responsive*/
+
+    #newsletter p {
+        font-size: 16px;
+    }
+
+    #newsletter  p span {
+        font-size: 18px;
+    }
+
+    #newsletter .form{
+        width: 100%;
+    }
+
+    /* footer section responsive */
+
+    footer .col {
+        margin:0px 12px 12px 0px;
+    }
+
+    .copyright {
+        text-align: start;
+    }
+}
