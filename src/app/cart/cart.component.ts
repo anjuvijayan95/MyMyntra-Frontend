@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CartService } from '../service/cart.service';
 import { FormBuilder, Validators } from '@angular/forms';
+import { ApiServiceService } from '../service/api-service.service';
 
 
 @Component({
@@ -18,7 +19,9 @@ export class CartComponent implements OnInit{
   // to adjust decimal point ,
   grantTotal:number=0
   Amount:number=0
-
+  username:string=''
+  mobileNum:any
+  address:string=''
 
 
   checkoutReactForm=this.fb.group({
@@ -28,7 +31,7 @@ export class CartComponent implements OnInit{
     address:['',[Validators.required,Validators.pattern('[0-9a-zA-Z]*')]],
     card:['',[Validators.required,Validators.pattern('[0-9a-zA-Z]*')]]
   })
-  constructor(private cart:CartService, private route:Router,private fb:FormBuilder){}
+  constructor(private cart:CartService, private route:Router,private fb:FormBuilder, private api:ApiServiceService){}
 
   checkoutTs(){
     if(this.checkoutReactForm.valid){
@@ -48,6 +51,7 @@ export class CartComponent implements OnInit{
       console.log(this.items);
     }
    )
+   
 
    let total=this.cart.netTotal()
    this.grantTotal=Number(total.toFixed(2))
@@ -56,7 +60,26 @@ export class CartComponent implements OnInit{
     this.Amount=Number(tagAmount.toFixed(2))
     this.discountTotal=this.Amount-this.grantTotal
 
+
   }
+
+  localstorage(){
+    
+    if(localStorage.getItem("username")){
+      this.username=localStorage.getItem("username") || ''
+    }
+    if(localStorage.getItem("mobileNum")){   
+      this.mobileNum=localStorage.getItem("mobileNum") || ''
+    }
+    if(localStorage.getItem("address")){   
+      this.address=localStorage.getItem("address") || ''
+    }
+
+  }
+
+
+  // get from local storage
+  
 
   remove(product:any){
     this.cart.remove(product)
@@ -81,4 +104,5 @@ export class CartComponent implements OnInit{
       window.location.reload()
     },2000)
   }
+
 }

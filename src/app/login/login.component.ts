@@ -26,13 +26,25 @@ export class LoginComponent {
        let mobile=this.loginReactForm.value.mobile
        let pswd=this.loginReactForm.value.pswd
       //  above we are simply assingn its value to two variables
-       console.log(this.loginReactForm.value);
+      //  console.log(this.loginReactForm.value);
         this.api.loginServ(mobile,pswd)
         .subscribe((result:any)=>{
+          console.log(result);
+          
             this.successMsg=result.message
+
+            //storing customer details in local storage         
+            localStorage.setItem("username",result.username)
+            localStorage.setItem("mobileNum",result.mobileNum)
+            localStorage.setItem("address",result.address)
+
+            // storing token in local storage 
+            localStorage.setItem("token",result.token)
+
+
             setTimeout(()=>{
               this.route.navigateByUrl('/home')
-            },3000)
+            },2000)
         },
         (result:any)=>{
           this.errorMsg=result.error.message

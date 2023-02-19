@@ -9,6 +9,7 @@ import { ApiServiceService } from '../service/api-service.service';
 export class HomeComponent implements OnInit{
   brands:any=[]
   allProducts:any=[]
+  searchItem:any
      constructor(private api:ApiServiceService){}
 
      ngOnInit(): void {
@@ -33,6 +34,13 @@ export class HomeComponent implements OnInit{
          alert(result.error.message)
        }
        )
+
+    this.api.searchKey.subscribe((result:any)=>{
+      console.log(result);
+      this.searchItem=result
+
+    })
+       
      }
 
 

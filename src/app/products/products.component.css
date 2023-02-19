@@ -130,7 +130,7 @@ body{
     text-align: justify;
 }
 
-/* ******************** feature product section css****************** */
+/* ******************** comming section css****************** */
 
 #product h1,p{
     text-align: center;
@@ -156,6 +156,7 @@ body{
     /* position: relative; */
     background-image: url('https://previews.123rf.com/images/flas100/flas1001306/flas100130600099/20379223-abstract-light-color-watercolor-background.jpg');
     margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 #product .pro-container .pro:hover{
@@ -342,6 +343,12 @@ footer a:hover{
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        height: 100%;
+    }
+
+    #prodetails .single-pro-image #singleImage{
+        width: 100%;
+        height: 100%;
     }
 
     #prodetails .single-pro-details{

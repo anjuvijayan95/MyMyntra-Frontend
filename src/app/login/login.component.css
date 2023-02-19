@@ -4,14 +4,14 @@
 .body{
     width: 100%;
     background-size: cover;
-    height: 88vh;
+    height: 100vh;
 }
 
 img{
     width:100%
 }
 .wrapper{
-    margin-top: 30px;
+    margin-top: 4.5rem;
     /* padding-bottom: 40px; */
 }
 form{

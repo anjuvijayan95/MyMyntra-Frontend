@@ -18,21 +18,21 @@
             <a class="nav-link" routerLink="/blog">BLOG</a>
           </li>
           <li class="nav-item ms-4">
-            <a class="nav-link" href="#">ABOUT</a>
+            <a class="nav-link" routerLink="/about">ABOUT</a>
           </li>
           <li class="nav-item ms-4">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" routerLink="/contactUs">CONTACT</a>
           </li>
 
         </ul>
         <form class="d-flex" role="search">
           <div></div>
-          <input class="form-control" type="search"  placeholder="Search for products, brands and more" aria-label="Search">
+          <input (keyup)="search($event)" class="form-control" type="search"  placeholder="Search for products, brands and more" aria-label="Search">
         </form>
         <div class="iconDiv">
         <a routerLink="/wishlist"><i class="fa fa-heart text-danger"></i></a>
         <a routerLink="/cart"><i class="fa-solid fa-cart-shopping text-warning"></i></a>
-        <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+        <a (click)="logout()" href=""><i class="fa-solid fa-right-from-bracket"></i></a>
       </div>
       </div>
     </div>

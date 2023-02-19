@@ -19,6 +19,10 @@
 
 </section> -->
 
+<!-- navbar -->
+<app-navbar></app-navbar>
+
+
 <!-- hero section -->
 <section id="hero">
 <h4>Trade-in-Offer</h4>
@@ -85,7 +89,7 @@
 <p id="title-para">Summer Collections & New Morden Designs</p>
 
 <div class="pro-container">
-    <div class="pro" *ngFor="let pro of allProducts"> 
+    <div class="pro" *ngFor="let pro of allProducts | filter: searchItem :'title' " > 
         
         <!-- <div class="icons">
             <a href="" class="fas fa-heart" style="color: rgb(214, 16, 82);"></a>

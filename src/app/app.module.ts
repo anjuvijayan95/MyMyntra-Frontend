@@ -16,6 +16,9 @@ import  {HttpClientModule}  from '@angular/common/http';
 import { ShopComponent } from './shop/shop.component';
 import { BrandProductComponent } from './brand-product/brand-product.component';
 import { BlogComponent } from './blog/blog.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { AboutComponent } from './about/about.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { BlogComponent } from './blog/blog.component';
     ShopComponent,
     BrandProductComponent,
     BlogComponent,
+    FilterPipe,
+    AboutComponent,
+    ContactUsComponent,
     
   ],
   imports: [

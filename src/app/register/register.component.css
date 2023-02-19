@@ -5,7 +5,8 @@
 .body{
     background-color: rgb(255, 217, 0);
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-size: cover;
 }
 h3{
     font-size: 30px;
@@ -17,8 +18,8 @@ background-repeat: no-repeat;
 background-position: center;
 }
 #wrapCol{
-    margin-top:47px;
-    margin-bottom:2em ;
+    margin-top:5rem;
+    margin-bottom:2rem ;
 }
 label{
     font-weight: bold;
@@ -48,7 +49,7 @@ input{
 
     .body{
         background-color: grey;
-        height: 88vh;
+        height: 100vh;
     }
 
     #contentRow{
@@ -60,7 +61,7 @@ input{
 
         .body{
             background-color: rgb(141, 9, 112);
-            height: 88vh;
+            height: 100vh;
         }
 
         #image{

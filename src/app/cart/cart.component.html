@@ -1,3 +1,6 @@
+    <!-- navbar -->
+    <app-navbar></app-navbar>
+    
     <!-- blog section -->
     <section id="page-header">
         <h2>#Check Your Cart</h2>
@@ -22,8 +25,8 @@
                 <tr *ngFor="let item of items; let i=index;">
                     <td>{{i+1}}</td>
                     <td><img [src]="item.image"></td>
-                    <td>{{item.title}}</td>
-                    <td>{{item.price}}</td>
+                    <td>{{item.title.slice(0,13)}}...</td>
+                    <td>Rs.{{item.price}}</td>
                     <!-- <td><input type="number" value="1"></td> -->
                     <td><button (click)="remove(item)" class="fas fa-trash" style="border: none; color: rgb(253, 57, 165);"></button></td> 
                 </tr>
@@ -61,7 +64,7 @@
                     </tr>
                 </tbody>
             </table>
-            <button   data-bs-toggle="offcanvas" href="#offcanvasExample">Proceed to Checkout</button>
+            <button (click)="localstorage()"  data-bs-toggle="offcanvas" href="#offcanvasExample">Proceed to Checkout</button>
         </div>
     </section>
 
@@ -135,41 +138,26 @@
     <!-- <a class="btn btn-primary "  role="button" aria-controls="offcanvasExample" >
         Link with href
       </a> -->
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         Button with data-bs-target
-      </button>
+      </button> -->
       
-      <div class="offcanvas offcanvas-start mt-5" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+      style="margin-top: 140px;">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+          <button type="button" class="btn-close me-2 mt-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <div>
-            <form action="" style="display: flex;  flex-direction: column;" class="p-3"
-            [formGroup]="checkoutReactForm" (ngSubmit)="checkoutTs()">
-                <h3>Customer Details</h3>
-                <input  name="name" formControlName="name"  class="mt-3 p-1 form-control mb-1" type="text" placeholder="Customer Name">
-                <div *ngIf="this.checkoutReactForm.get('name')?.errors&&this.checkoutReactForm.get('name')?.touched" class="text-danger">
-                    Invalid Username
-                </div>
-
-                <textarea  name="address" formControlName="address"  class="form-control p-1 mb-1" type="text" placeholder="Customer Address"></textarea>
-                <div *ngIf="this.checkoutReactForm.get('address')?.errors&&this.checkoutReactForm.get('address')?.touched" class="text-danger">
-                    Invalid Address
-                </div>
-
-                <input  name="pin" formControlName="pin"  class="form-control p-1 mb-1" type="text" placeholder="Pin Number">
-                <div *ngIf="this.checkoutReactForm.get('pin')?.errors&&this.checkoutReactForm.get('pin')?.touched" class="text-danger">
-                    Invalid pin
-                </div>
-
-                <input  name="mobile" formControlName="mobile"  class="form-control p-1" type="text" placeholder="Mobile">
-                <div *ngIf="this.checkoutReactForm.get('mobile')?.errors&&this.checkoutReactForm.get('mobile')?.touched" class="text-danger">
-                    Invalid number
-                </div>
-
-            </form>
+            <h3 class="ps-3">Your Address</h3>
+            <div class="details">
+                <p><span>Name:</span>{{username}}</p>
+                <p><span>Address:</span>{{address}}</p>
+                <p><span>Mobile Number:</span>{{mobileNum}}</p>
+            </div>
+            
+         
             <form  class="p-3" [formGroup]="checkoutReactForm" (ngSubmit)="checkoutTs()">
                 <h3>Card Details</h3>
                 <input   name="name" formControlName="name"   class="form-control p-1 mt-3 mb-1" type="text" placeholder="Card Holder Name">

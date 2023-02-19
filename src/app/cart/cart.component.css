@@ -139,6 +139,23 @@ body{
     border-radius: .3rem;
 }
 
+/* details */
+
+.details{
+    padding: .5rem;
+    width: 90%;
+    border: 1px solid rgb(233, 230, 230);
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+
+.details p span{
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+
 
 
 /* Newsletter section css */
@@ -250,4 +267,171 @@ footer a:hover{
 .copyright{
     text-align: center;
     width: 100%;
+}
+
+
+/* media query */
+
+
+@media(max-width:799px){
+
+    #page-header{
+        height: 18vh;
+    }
+    #checkout{
+        justify-content: space-evenly;
+        background-image: url(https://img.freepik.com/premium-photo/shopping-banner-with-shopping-bags-gift-boxes-3d-render-illustration-perfect-shopping-banner_7209-503.jpg);
+        padding: 0;
+        height: 16rem;
+        margin-top: 2rem;
+       }
+
+    #checkout .amount{
+        padding: 1rem 1rem 15rem 1rem;
+        width: 70%;
+        height: 100%;
+        margin-left: 2rem;
+    }
+    #newsletter .form{
+        display: flex;
+        width: 70%;
+    }
+}
+
+@media(max-width:477px){
+
+    .section-p1{
+        margin: 5px 10px;
+    }
+    .section-m1{
+        margin: 50px 0;
+    
+    }
+    #page-header{
+        height: 18vh;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    #cart{
+        width: 95%;
+        align-items: center;
+    }
+    #cart .table{
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    #cart .table th,#cart .table td{
+        text-align: center;
+    }
+    
+    #cart .table tbody td,#cart .table thead th{
+        width: 100%;
+        /* border:1px solid #088178; */
+        font-size: 10px;
+    }
+    
+    #cart .table tbody img{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    #cart .table tbody input{
+        width: 2rem;
+    }
+
+    /* checkout table */
+#checkout{
+    justify-content: space-evenly;
+    background-image: url(https://img.freepik.com/premium-photo/shopping-banner-with-shopping-bags-gift-boxes-3d-render-illustration-perfect-shopping-banner_7209-503.jpg);
+    padding: 0;
+    height: 12rem;
+    margin-top: 2rem;
+   }
+   
+   #checkout .image img{
+       width: 25rem;
+   }
+   
+   #checkout .amount{
+       padding: 1rem 1rem 10rem 1rem;
+       width: 70%;
+       height: 100%;
+       margin-left: 2rem;
+   }
+
+   #checkout .amount table{
+    height: 100%;
+   }
+   
+   #checkout .amount .heading{
+       display: flex;
+   }
+   
+   #checkout .amount .heading img{
+       width: 2rem;
+       margin-top: -1rem;
+   }
+   
+   #checkout .amount h4{
+       padding-bottom: .2rem;
+       font-size: .8rem;
+   }
+   
+   #checkout .amount table tr td{
+       border: 1px solid lightgrey;
+       width: 10%;
+       height: 5%;
+       padding: .5rem;
+       font-size: .8rem;
+   }
+
+   #checkout .amount table tr{
+    height: .1rem;
+    width: 5rem;
+   }
+   
+   #checkout button{
+       padding: .2rem;
+       border: none;
+       margin-top: .5rem;
+       background-color: #088178;
+       color: white;
+       font-weight: bold;
+       font-size: .5rem;
+       border-radius: .3rem;
+   }
+
+       /*news letter form responsive*/
+
+       #newsletter p {
+        font-size: 16px;
+    }
+
+    #newsletter  p span {
+        font-size: 18px;
+    }
+
+    #newsletter .form{
+        width: 100%;
+    }
+
+    /* footer section responsive */
+
+    footer .col {
+        margin:0px 12px 12px 0px;
+    }
+
+    .copyright {
+        text-align: start;
+    }
+   
 }

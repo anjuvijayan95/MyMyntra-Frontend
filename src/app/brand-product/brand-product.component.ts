@@ -14,29 +14,11 @@ export class BrandProductComponent {
   constructor(private api:ApiServiceService){}
 
 // ngOnInit(): void {
-//   this.api.allProductServ()
-//   .subscribe((result:any)=>{
-//     this.allProducts=result.products
-//     // console.log(this.allProducts);
-    
-//   },
-//   (result)=>{
-//     alert(result.error.message)
-//   })
-
-//   this.api.brandServ()
-//   .subscribe((result:any)=>{
-//     this.brandName=result.brands.brand
+//   this.api.oneBrandServ()
+//   .subscribe((result)=>{
 //     console.log(result);
     
-//     this.selected=this.allProducts.filter((item:any)=>item.brand==this.brandName)
-//     console.log(this.selected);
-    
-
-
-
-//   }
-//  )
+//   })
 // }
 
 

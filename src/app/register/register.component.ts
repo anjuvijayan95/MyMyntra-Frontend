@@ -14,10 +14,10 @@ passMsg:string=''
 failMsg:string=''
 
 registReactForm=this.fb.group({
-  uname:['',[Validators.required,Validators.pattern('[a-zA-Z]*')]],
+  uname:['',[Validators.required,Validators.pattern('[" "a-zA-Z]*')]],
   mobile:['',[Validators.required,Validators.pattern('[0-9]*')]],
   pswd:['',[Validators.required,Validators.pattern('[0-9a-zA-Z]*')]],
-  address:['',[Validators.required,Validators.pattern('[0-9a-zA-Z]*')]]
+  address:['',[Validators.required,Validators.pattern('[" "0-9a-zA-Z,]*')]]
 })
 
 constructor(private fb:FormBuilder,private api:ApiServiceService,private route:Router){}
